@@ -1,0 +1,55 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Psuedo Protocols in HTML and JS</title>
+	<style type="text/css">
+		body { text-align: center; }
+
+		a { text-decoration: none; font: 25; font-family: cursive; border: 1px solid black; padding-left: 20px; padding: 15px; background-color: teal; color: azure; transition: 1.2s ease; z-index: 0;}
+		a:hover { background-color: azure; color: black; }
+
+		.home-btn { margin-top: 20%; }
+
+		#popDiv {
+			display: none;
+			margin-left: 30%;
+			margin-top: 10%;
+			border: 5px double teal;
+			width: 500px;
+			height: 300px;
+			z-index: 1;
+			padding: 0%;
+			padding-top: 5%;
+			text-align: center;
+		}
+
+		@media (max-width: 700px){
+			#popDiv {
+				width: 400px;
+				height: 400px;
+				margin-left: 10%;
+			}
+		}
+	</style>
+</head>
+<body>
+
+	<div class="home-btn" id="btn">
+		<a href="javascript:showDiv()"> Home </a>
+	</div>
+	
+	<div id="popDiv">
+		<h3>A link was visited!</h3>
+	</div>
+
+
+	<script type="text/javascript">
+		function showDiv(){
+			document.getElementById('popDiv').style.display = 'block';
+			document.getElementById('btn').style.display = 'none';
+		}
+	</script>
+
+</body>
+</html>

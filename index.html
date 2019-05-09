@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Changes 5s after the page loads!</title>
+	<style type="text/css">
+		body{ background: azure; transition: 2.5s ease;}
+		#container { height: 50vh; text-align: center; padding-top: 20%;}
+
+	</style>
+</head>
+<body>
+
+<div id="container">
+	<h1 id="header">Welcome to our platform!</h1>
+</div>
+
+
+	<script type="text/javascript">
+		
+		function changeBg() {
+			document.body.style.backgroundColor = 'teal';
+			document.getElementById('header').style.color = 'azure';
+		}
+
+		window.onload = function(){
+			setTimeout(changeBg, 5000);
+		};
+	</script>
+
+</body>
+</html>

@@ -1,6 +1,4 @@
-
 var Task = require('./constructors');
-
 
 // Creating tasks
 var task1 = new Task('Creating demo for constructor');

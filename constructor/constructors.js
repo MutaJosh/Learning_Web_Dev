@@ -1,6 +1,5 @@
 'use strict'
 
-
 // A constructor function which initializes the instance of an object
 var Task = function(name){
 	this.name = name;
